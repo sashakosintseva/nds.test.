@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Навбар - сразу видимый -->
+    <nav class="navbar">
+        <a href="glav.html" class="logo">
+            <img src="img/1-no-bg-preview (carve.photos) (1) 1.svg" alt="NDC Logo">
+        </a>
+
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="rasp.html">Расписание</a></li>
+        
+                <li><a href="prep.html">Хореографы</a></li>
+                <li><a href="style.html">Стили</a></li>
+                <li><a href="contact.html" style="color: #b90000;">Контакты</a></li>
+            </ul>
+
+            <a href="tel:+79991234567" class="phone-number">
+                +7 (912) 375-66-71
+            </a>
+        </div>
+    </nav>
+
+    <!-- Главный заголовочный блок -->
+    <section class="styles-hero-section">
+        <div class="styles-hero-container">
+            <h1 class="styles-hero-title">КОНТАКТЫ</h1>
+            <p class="styles-hero-subtitle">Дорога к мечте должна быть короткой. Убедись в этом!</p>
+        </div>
+    </section>
+
+   
+    
+    <!-- Текстовая секция - на всю ширину -->
+    <section class="contact-text-section">
+        <p class="contact-text">
+            Наша танцевальная студия расположена в самом сердце городской жизни — мы находится всего в <span
+                class="highlight">10-15 минутах езды</span> от цетральной улицы, в уютном и живописном районе. Это
+            идеальное место для тех, кто ценит своё время и хочет совместить насыщенный ритм города с возможностью
+            творчества и развития. Добраться до нас невероятно легко из любой точки, ведь мы позаботились о <span
+                class="highlight">безупречной транспортной доступности</span>. Если вы передвигайтесь на автобусах, то рядом с нашим зданием расположена остановка
+            «Красного Казачества», через которую проходит множество автобусных маршрутов из разных
+            районов, включая центр. Всего несколько минут в дороге — и вы на месте. Для тех, кто планирует приехать на
+            автомобиле, мы предусмотрели <span class="highlight">удобную парковку</span> во дворе. Даже если
+            вы живёте или работаете в центре, до нас можно приятно дойти пешком через красивые скверы всего за 20-25
+            минут, получив тем самым отличную предварительную прогулку. Всё это означает, что ваше путешествие к танцу
+            будет лёгким и предсказуемым: вам не придётся тратить часы на дорогу и переживать из-за опозданий. Мы
+            создали студию как место силы и вдохновения, куда можно быстро добраться после работы или учёбы, чтобы
+            полностью погрузиться в искусство движения. Ждём вас на занятиях — убедитесь сами, как просто начать
+            танцевать, когда студия находится так близко и удобно!
+        </p>
+    </section>
+
+    <!-- Блок с картой - уменьшенная -->
+    <section class="map-section">
+        <div class="map-container">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abdcf26bb0ba0ba9f4518136c58a287c957545d0a4c85d9fe4f9391e784fb38d9&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </section>
+
+    <!-- Видео секция - уменьшенная -->
+    <section class="video-section">
+        <div class="video-container" id="videoContainer">
+            <video class="video-player" id="videoPlayer" preload="metadata">
+                <!-- Замените src на ваше видео -->
+                <source
+                    src="videos/dance-studio-video.mp4.MOV"
+                    type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <div class="video-overlay" id="videoOverlay">
+                <h2 class="video-text">Пройти к нам очень просто</h2>
+                <div class="play-button" id="playButton">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Информация о местоположении -->
+    <section class="location-info">
+        <h2 class="address">ул.Чкалова 35/1 тц. Европа-Азия 3 этаж</h2>
+
+        <div class="additional-info">
+            <div class="info-block">
+                <h3 class="info-title"><i class="fas fa-clock"></i> Часы работы</h3>
+                <p class="info-text">Пн-Пт: 9:00 - 22:00<br>Сб-Вс: 10:00 - 20:00</p>
+            </div>
+
+            <div class="info-block">
+                <h3 class="info-title"><i class="fas fa-phone"></i> Контакты</h3>
+                <p class="info-text">Телефон: +7 (912) 375-66-71<br>Email: info@ndc-dance.ru</p>
+            </div>
+        </div>
+    </section>
+
+
+   <script>
+    // Бургер-меню
+    document.addEventListener('DOMContentLoaded', function() {
+        const burgerMenu = document.createElement('div');
+        burgerMenu.className = 'burger-menu';
+        burgerMenu.innerHTML = `
+            <span></span>
+            <span></span>
+            <span></span>
+        `;
+        
+        const navContainer = document.querySelector('.nav-container');
+        const navbar = document.querySelector('.navbar');
+        
+        // Вставляем бургер-меню в навбар (справа)
+        navbar.appendChild(burgerMenu);
+        
+        burgerMenu.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.classList.toggle('active');
+            navContainer.classList.toggle('active');
+            
+            // Блокировка прокрутки при открытом меню
+            document.body.style.overflow = navContainer.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        // Закрытие меню при клике на ссылку
+        const navLinks = document.querySelectorAll('.nav-links a, .phone-number');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                burgerMenu.classList.remove('active');
+                navContainer.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Закрытие меню при клике вне его области
+        document.addEventListener('click', function(event) {
+            if (!navContainer.contains(event.target) && !burgerMenu.contains(event.target) && navContainer.classList.contains('active')) {
+                burgerMenu.classList.remove('active');
+                navContainer.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Управление видео
+        const videoContainer = document.getElementById('videoContainer');
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoOverlay = document.getElementById('videoOverlay');
+        const playButton = document.getElementById('playButton');
+
+        if (videoContainer && videoPlayer) {
+            // Функция для воспроизведения видео
+            function playVideo() {
+                videoContainer.classList.add('video-playing');
+                videoPlayer.play();
+                videoPlayer.controls = true;
+            }
+
+            // Обработчики событий для воспроизведения видео
+            if (playButton) {
+                playButton.addEventListener('click', playVideo);
+            }
+            if (videoOverlay) {
+                videoOverlay.addEventListener('click', playVideo);
+            }
+
+            // Сброс состояния видео при его окончании
+            videoPlayer.addEventListener('ended', function () {
+                videoContainer.classList.remove('video-playing');
+                videoPlayer.controls = false;
+                videoPlayer.currentTime = 0;
+            });
+
+            // Пауза видео при скролле за пределы видимости
+            window.addEventListener('scroll', function () {
+                const rect = videoContainer.getBoundingClientRect();
+                if (rect.bottom < 0 || rect.top > window.innerHeight) {
+                    if (!videoPlayer.paused) {
+                        videoPlayer.pause();
+                    }
+                }
+            });
+        }
+
+        // Стрелка для прокрутки наверх
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.classList.add('show');
+                } else {
+                    scrollToTopBtn.classList.remove('show');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Анимация появления футера
+        const footerSection = document.querySelector('.footer-section');
+        const footerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        if (footerSection) {
+            footerObserver.observe(footerSection);
+        }
+    });
+</script>
+      <!-- Футер -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Лого и описание -->
+                <div class="footer-info">
+                    <div class="footer-logo">NEOS DANCE CENTER</div>
+                    <p class="footer-description">
+                        Профессиональная танцевальная студия, где каждый найдет свой стиль и раскроет творческий потенциал. 
+                        Присоединяйтесь к нашей танцевальной семье!
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me/LizaBarash" class="social-link" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Навигация -->
+                <div class="footer-nav">
+                    <h3>РАЗДЕЛЫ</h3>
+                    <ul class="footer-links">
+                        <li><a href="glav.html">Главная</a></li>
+                        <li><a href="prep.html">Хореографы</a></li>
+                        <li><a href="style.html">Стили</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <!-- Контакты -->
+                <div class="footer-contacts">
+                    <h3>КОНТАКТЫ</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Чкалова 35/1, ТЦ "Европа-Азия" 3 этаж</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (999) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Пт: 9:00 - 22:00<br>Сб-Вс: 10:00 - 20:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 NEOS DANCE CENTER. Все права защищены.</p>
+                </div>
+                <div class="footer-center-text">
+                    <span>NEOS DANCE CENTER</span>
+                </div>
+                <div class="footer-developer">
+                    <p>Разработано с <i class="fas fa-heart"></i> для танцоров</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Стрелка для прокрутки наверх -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script>
+         // Стрелка для прокрутки наверх
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Анимация появления футера
+        const footerSection = document.querySelector('.footer-section');
+        const footerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        if (footerSection) {
+            footerObserver.observe(footerSection);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NDC танцевальный центр</title>
+</head>
+<link rel="stylesheet" href="glav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<body>
+
+
+     <!-- Экран загрузки -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="ndc-text">NDC</div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <div id="mainContent" class="main-content">
+        <nav class="navbar" id="navbar">
+            <a href="glav.html" class="logo">
+                <img src="img/1-no-bg-preview (carve.photos) (1) 1.svg" alt="NDC Logo">
+            </a>
+
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-container" id="navContainer">
+                <ul class="nav-links">
+                    <li><a href="rasp.html">Расписание</a></li>
+                    <li><a href="prep.html">Хореографы</a></li>
+                    <li><a href="style.html">Стили</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+
+                <a href="tel:+79991234567" class="phone-number">
+                    +7 (912) 375-66-71
+                </a>
+            </div>
+        </nav>
+
+        <section class="hero-section">
+            <div class="hero-content" id="heroContent">
+                <h1 class="hero-title">NEOS DANCE CENTER</h1>
+                <h2 class="hero-subtitle"><span>ТАНЦЕВАЛЬНЫЙ ЦЕНТР</span></h2>
+            </div>
+        </section>
+
+        <!-- Бегущая строка -->
+        <section class="marquee-section">
+            <div class="marquee-container">
+                <div class="marquee-text">
+                    <span>Твой ритм.</span>
+                    <span>Твой стиль.</span>
+                    <span>Твоя волна.</span>
+                    <span>Твой ритм.</span>
+                    <span>Твой стиль.</span>
+                    <span>Твоя волна.</span>
+                    <span>Твой ритм.</span>
+                    <span>Твой стиль.</span>
+                    <span>Твоя волна.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок с фотографией и текстом -->
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <div class="photo-container">
+                    <img src="img/фото1 не чб.svg" alt="Танцевальный центр NDC" class="photo-main">
+                    <img src="img/фото1.svg" alt="Танцевальный центр NDC - тренировка"
+                        class="photo-hover">
+                </div>
+                <div class="about-text">
+                    <h2 class="about-title">Наша философия</h2>
+                    <div class="about-description">
+                        <p>С самого первого занятия ты понимаешь, что попал не просто в спортивный центр, а в место,
+                            <span class="highlight-red">где тебя ждали</span>. Здесь стирается грань между «я» и «мы»,
+                            потому что мы — это прежде всего большая и дружная семья, объединенная любовью к <span
+                                class="highlight-red">танцу</span>.
+                        </p>
+                        <p>Во главе этой семьи — <span class="highlight-red">наши тренеры</span>, которые являются не
+                            просто наставниками, а старшими товарищами, всегда готовыми поддержать, вдохновить и
+                            раскрыть потенциал каждого.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-text">Лет опыта</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="7">0</span>
+                    <span class="stat-text">Профессиональных хореографов</span>
+                </div>
+               
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-text">Танцевальных направлений</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок "Выбери свой стиль" -->
+        <section class="style-section" id="styles">
+            <div class="style-container">
+                <img src="img/стили1.svg" alt="Танцевальные стили" class="style-image">
+                <div class="style-overlay">
+                    <h2 class="style-title">ВЫБЕРИ СВОЙ <span class="style-red">СТИЛЬ</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок со стилями -->
+        <section class="dance-styles-section">
+            <div class="styles-container">
+                <div class="styles-grid">
+                    <div class="style-item" data-trainer="trainer-hiphop">
+                        <span class="style-name">HIP-HOP</span>
+                    </div>
+                    <div class="style-item" data-trainer="trainer-afro">
+                        <span class="style-name">AFRO</span>
+                    </div>
+                    <div class="style-item" data-trainer="trainer-vacking">
+                        <span class="style-name">VAACKING</span>
+                    </div>
+                    <div class="style-item" data-trainer="trainer-jazzfunk">
+                        <span class="style-name">JAZZ-FUNK</span>
+                    </div>
+                    <div class="style-item" data-trainer="trainer-locking">
+                        <span class="style-name">LOCKING</span>
+                    </div>
+                    <div class="style-item" data-trainer="trainer-popping">
+                        <span class="style-name">POPPING</span>
+                    </div>
+                    <div class="style-item" data-trainer="trainer-dancehall">
+                        <span class="style-name">DANCEHALL</span>
+                    </div>
+                    <div class="style-item" data-trainer="trainer-house">
+                        <span class="style-name">HOUSE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок с галереей залов -->
+        <section class="gallery-section" id="portfolio">
+            <div class="gallery-container">
+                <h2 class="gallery-title">ПРОСТРАНСТВО, ГДЕ РОЖДАЕТСЯ ПРОГРЕСС</h2>
+                <p class="gallery-subtitle">ТВОЯ СТУДИЯ, ТВОЙ РИТМ, ТВОЙ РЕЗУЛЬТАТ</p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item large">
+                        <img src="img/image 1 (2).svg" alt="Основной танцевальный зал" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h3>ОСНОВНОЙ ЗАЛ</h3>
+                            <p>Просторное помещение с профессиональным покрытием</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/photo_5386620929376909317_y 1.svg" alt="Зеркальная стена" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h3>ВТОРОЙ ЗАЛ</h3>
+                            <p>Все для вашего удобства</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/photo_5386620929376909292_y 1.svg" alt="Система освещения" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h3>ПРОФЕССИОНАЛЬНЫЙ СВЕТ</h3>
+                            <p>Современная система освещения</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/photo_5386620929376909284_y 1.svg" alt="Раздевалки" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h3>ЗОНА ОТДЫХА</h3>
+                            <p>Место для общения и восстановления</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/photo_5386620929376909314_y 1.svg " alt="Рекреационная зона"
+                            class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h3>НАГРАДЫ</h3>
+                            <p>Мы достигаем высочайших вершин</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Текстовый блок о пространстве -->
+                <div class="space-description-minimal">
+                    <div class="space-text-minimal">
+                        <p>Наша студия — это не просто зал, а целая экосистема, созданная для твоего прогресса. Основной
+                            зал площадью <span class="highlight-red">150 м²</span> с профессиональными зеркалами от пола
+                            до потока становится твоим личным пространством для самовыражения, где каждое движение
+                            обретает совершенство.</p>
+                        <p>За пределами тренировочной зоны тебя ждет уютная lounge-зона — идеальное место для
+                            восстановления сил. Качество звука — наша особая гордость. Профессиональная аудиосистема
+                            создает идеальный
+                            саундскейп, где каждый бас отзывается в такт твоему сердцу, а мелодия ведет через все
+                            упражнения.</p>
+                        <p>Мы создали место, где каждая деталь работает на твой результат — от продуманного освещения до
+                            эргономики зоны отдыха. Это больше, чем студия. Это твоя территория роста.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- После текстового блока добавляем красную полосу -->
+        <div class="red-banner-section">
+            <div class="red-banner">
+                <div class="banner-content">
+                    <span class="banner-text">Танцуй с нами. Мечтай с нами. Будь с нами.</span>
+                </div>
+            </div>
+        </div>
+
+                  <!-- Блок с фотографиями после красной полосы -->
+        <section class="photos-after-banner-section">
+            <div class="photos-after-container">
+                <div class="photos-after-grid">
+                    <div class="photo-after-item">
+                        <img src="img/твои ритм.svg" alt="Танцевальное занятие" class="photo-after-image">
+                        <div class="photo-after-overlay">
+                            <div class="photo-after-text">
+                                <h3>ТВОЙ РИТМ</h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-after-item">
+                        <img src="img/твоя волна.svg" alt="Танцевальная команда" class="photo-after-image">
+                        <div class="photo-after-overlay">
+                            <div class="photo-after-text">
+                                <h3>ТВОЯ ВОЛНА</h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок с адресом и картой -->
+        <section class="contacts-section" id="contacts">
+            <div class="contacts-container">
+                <h2 class="contacts-title">НАЙДИ НАС - ПРИСОЕДИНЯЙСЯ К СЕМЬЕ</h2>
+                <div class="contacts-content">
+                    <div class="address-info">
+                        <div class="address-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="address-text">
+                                <h3>АДРЕС</h3>
+                                <p>Чкалова 35/1</p>
+                                <p>ТЦ "Европа-Азия" 3 этаж</p>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="address-text">
+                                <h3>ТЕЛЕФОН</h3>
+                                <p>+7 (999) 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="address-text">
+                                <h3>ВРЕМЯ РАБОТЫ</h3>
+                                <p>Пн-Пт: 9:00 - 22:00</p>
+                                <p>Сб-Вс: 10:00 - 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad6da932530fba31ef4db3a5f01245643ad0d4074f7fe3b880310bf8f09a1df78&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Видео блок -->
+        <section class="video-section">
+            <div class="video-container">
+                <video class="fullscreen-video" muted loop playsinline>
+                    <source src="videos/dance-studio-video.mp4.MOV" type="video/mp4">
+                    Ваш браузер не поддерживает видео тег.
+                </video>
+                <div class="video-overlay">
+                    <div class="play-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок FAQ -->
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <h2 class="faq-title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+                
+                <div class="faq-content">
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>С какого возраста можно заниматься?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Мы принимаем детей от 5 лет. Для каждой возрастной группы разработана специальная программа.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Нужна ли специальная подготовка?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Нет, мы предлагаем занятия для всех уровней подготовки - от начинающих до продвинутых танцоров.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Какой стиль танцев мне выбрать?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Это зависит от ваших целей и музыкальных предпочтений. Позвоните или напишите нам, расскажите, что вам нравится, и мы с радостью поможем подобрать направление.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Что нужно брать с собой на занятие?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Удобную спортивную одежду, сменную обувь (кроссовки) и бутылку воды.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Что, если я пропущу занятие?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Мы понимаем, что обстоятельства бывают разными. Главное предупредить вашего тренера заранее и объяснить причину пропуска.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Я никогда раньше не танцевал(а). Смогу ли я начать?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Конечно! Большинство наших групп для начинающих как раз созданы для тех, кто делает первые шаги в танцах. Наши тренера уделяют внимание каждому и помогают комфортно войти в ритм.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Участвуете ли вы в конкурсах?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Да, наши команды регулярно участвуют в городских конкурсах, также мы выезжаем в другие города для участия. Также мы ежегодно организуем отчетный концерт!</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Можно ли заниматься индивидуально?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Да, мы предлагаем как занятия с командой, так и индивидуальные занятия с персональным тренером.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Можно ли не выезжать выступать в другие города?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Да, у нас есть команды, которые выступают только в городских конкурсах.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Можно ли поменять направление в процессе обучения?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Да, вы всегда можете сменить направление.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Стрелка для прокрутки наверх -->
+        <div class="scroll-to-top" id="scrollToTop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <!-- Футер -->
+        <footer class="footer-section">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <!-- Лого и описание -->
+                    <div class="footer-info">
+                        <div class="footer-logo">NEOS DANCE CENTER</div>
+                        <p class="footer-description">
+                            Профессиональная танцевальная студия, где каждый найдет свой стиль и раскроет творческий потенциал. 
+                            Присоединяйтесь к нашей танцевальной семье!
+                        </p>
+                        <div class="social-links">
+                            <a href="https://vk.com/neos_dance?w=club76085078" class="social-link" target="_blank">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="https://t.me/LizaBarash" class="social-link" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Навигация -->
+                    <div class="footer-nav">
+                        <h3>РАЗДЕЛЫ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#portfolio">Расписание</a></li>
+                            <li><a href="#trainers">Хореографы</a></li>
+                            <li><a href="#styles">Стили</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Контакты -->
+                    <div class="footer-contacts">
+                        <h3>КОНТАКТЫ</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Чкалова 35/1, ТЦ "Европа-Азия" 3 этаж</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (999) 123-45-67</span>
+                        </div>
+                    </div>
+
+                    <!-- Быстрые ссылки -->
+                    <div class="footer-quick-links">
+                        <h3>ПОЛЕЗНЫЕ ССЫЛКИ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#contacts">Как нас найти?</a></li>
+                            <li><a href="#faq">Вопрос-ответ</a></li>
+                            <li><a href="#styles">Стили</a></li>
+                            <li><a href="#about">О нас</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Нижняя часть футера -->
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 NEOS DANCE CENTER. Все права защищены.</p>
+                    </div>
+                    <div class="footer-center-text">
+                        <span>NEOS DANCE CENTER</span>
+                    </div>
+                    <div class="footer-developer">
+                        <p>Разработано с <i class="fas fa-heart"></i> для танцоров</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Проверяем, является ли это первым посещением страницы в текущей сессии
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            const isFirstVisit = !sessionStorage.getItem('ndcPageVisited');
+
+            if (isFirstVisit) {
+                // Первое посещение страницы в этой сессии - показываем загрузку
+                showLoadingAnimation();
+                // Сохраняем в sessionStorage, что страница уже посещалась в этой сессии
+                sessionStorage.setItem('ndcPageVisited', 'true');
+            } else {
+                // Повторное посещение страницы в той же сессии - сразу скрываем загрузку
+                loadingScreen.classList.add('hidden');
+                // Запускаем все анимации сразу
+                initializeAnimations();
+            }
+
+            // Инициализация остального функционала
+            initializePageFunctionality();
+        });
+
+        // Функция для показа анимации загрузки (только для первого посещения в сессии)
+        function showLoadingAnimation() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            
+            // Ждем завершения анимации заполнения текста (2 секунды)
+            setTimeout(function() {
+                // Скрываем экран загрузки
+                loadingScreen.classList.add('hidden');
+                
+                // Запускаем анимации контента
+                setTimeout(initializeAnimations, 300);
+            }, 2000);
+        }
+
+        // Функция для инициализации анимаций контента
+        function initializeAnimations() {
+            // Запускаем анимацию счетчиков при прокрутке
+            handleScroll();
+            window.addEventListener('scroll', handleScroll);
+        }
+
+        // Функция для инициализации всего функционала страницы
+        function initializePageFunctionality() {
+            // Все остальные функции инициализации
+            initializeCounters();
+            initializeStyles();
+            initializeScrollToTop();
+            initializeVideo();
+            initializeFAQ();
+            initializeObservers();
+            initializeBurgerMenu();
+        }
+
+        // Функция для анимации счетчиков
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const duration = 2000;
+            const stepTime = duration / 100;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, stepTime);
+        }
+
+        // Функция для проверки видимости элемента
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.9 &&
+                rect.bottom >= 0
+            );
+        }
+
+        // Обработчик прокрутки для анимации при появлении элементов
+        function handleScroll() {
+            const statItems = document.querySelectorAll('.stat-item');
+            const statNumbers = document.querySelectorAll('.stat-number');
+
+            statItems.forEach((item, index) => {
+                if (isElementInViewport(item) && !item.classList.contains('visible')) {
+                    item.classList.add('visible');
+
+                    setTimeout(() => {
+                        const numberElement = statNumbers[index];
+                        const target = parseInt(numberElement.getAttribute('data-target'));
+                        animateCounter(numberElement, target);
+                    }, 300 * index);
+                }
+            });
+        }
+
+        // Инициализация стилей
+        function initializeStyles() {
+            const styleItems = document.querySelectorAll('.style-item');
+            const trainerInfos = document.querySelectorAll('.trainer-info');
+            const defaultTrainer = document.getElementById('trainer-default');
+
+            styleItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    trainerInfos.forEach(info => info.classList.remove('active'));
+                    if (defaultTrainer) defaultTrainer.style.display = 'none';
+
+                    const trainerId = this.getAttribute('data-trainer');
+                    const trainerInfo = document.getElementById(trainerId);
+                    if (trainerInfo) {
+                        trainerInfo.classList.add('active');
+                    }
+                });
+            });
+
+            const stylesSection = document.querySelector('.dance-styles-section');
+            if (stylesSection) {
+                stylesSection.addEventListener('mouseleave', function() {
+                    trainerInfos.forEach(info => info.classList.remove('active'));
+                    if (defaultTrainer) defaultTrainer.style.display = 'flex';
+                });
+            }
+        }
+
+        // Инициализация стрелки прокрутки
+        function initializeScrollToTop() {
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.classList.add('show');
+                } else {
+                    scrollToTopBtn.classList.remove('show');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Инициализация видео
+        function initializeVideo() {
+            const videoContainer = document.querySelector('.video-container');
+            const video = document.querySelector('.fullscreen-video');
+            const videoOverlay = document.querySelector('.video-overlay');
+
+            if (videoContainer && video) {
+                videoContainer.addEventListener('click', function() {
+                    if (video.paused) {
+                        video.play();
+                        video.classList.add('playing');
+                        videoContainer.classList.add('playing');
+                        if (videoOverlay) videoOverlay.classList.add('hidden');
+                    } else {
+                        video.pause();
+                        video.classList.remove('playing');
+                        videoContainer.classList.remove('playing');
+                        if (videoOverlay) videoOverlay.classList.remove('hidden');
+                    }
+                });
+            }
+        }
+
+        // Инициализация FAQ
+        function initializeFAQ() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    item.classList.toggle('active');
+                });
+            });
+        }
+
+        // Инициализация бургер-меню
+        function initializeBurgerMenu() {
+            const burgerMenu = document.getElementById('burgerMenu');
+            const navContainer = document.getElementById('navContainer');
+
+            if (burgerMenu && navContainer) {
+                burgerMenu.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    navContainer.classList.toggle('active');
+                    
+                    // Блокировка прокрутки при открытом меню
+                    document.body.style.overflow = navContainer.classList.contains('active') ? 'hidden' : '';
+                });
+
+                // Закрытие меню при клике на ссылку
+                const navLinks = document.querySelectorAll('.nav-links a, .phone-number');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        burgerMenu.classList.remove('active');
+                        navContainer.classList.remove('active');
+                        document.body.style.overflow = '';
+                    });
+                });
+
+                // Закрытие меню при клике вне его области
+                document.addEventListener('click', function(event) {
+                    if (!navContainer.contains(event.target) && !burgerMenu.contains(event.target) && navContainer.classList.contains('active')) {
+                        burgerMenu.classList.remove('active');
+                        navContainer.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+        }
+
+        // Инициализация наблюдателей
+        function initializeObservers() {
+            // Анимация появления текста
+            const spaceTexts = document.querySelectorAll('.space-text-minimal p');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            spaceTexts.forEach((text, index) => {
+                text.style.transitionDelay = `${index * 0.15}s`;
+                observer.observe(text);
+            });
+
+            // Анимация красной полосы
+            const redBanner = document.querySelector('.red-banner-section');
+            const bannerObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            if (redBanner) bannerObserver.observe(redBanner);
+
+            // Анимация видео
+            const videoSection = document.querySelector('.video-section');
+            const videoObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            if (videoSection) videoObserver.observe(videoSection);
+
+            // Анимация FAQ
+            const faqItems = document.querySelectorAll('.faq-item');
+            const faqObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            faqItems.forEach((item, index) => {
+                item.style.transitionDelay = `${index * 0.1}s`;
+                faqObserver.observe(item);
+            });
+
+            // Анимация футера
+            const footerSection = document.querySelector('.footer-section');
+            const footerObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            if (footerSection) footerObserver.observe(footerSection);
+        }
+
+        // Плавная прокрутка для якорных ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop - 100;
+                    
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Инициализация счетчиков
+        function initializeCounters() {
+            // Уже есть в handleScroll
+        }
+
+        // Анимация фотографий после баннера
+const photosAfterSection = document.querySelector('.photos-after-banner-section');
+const photosAfterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.2 });
+
+if (photosAfterSection) photosAfterObserver.observe(photosAfterSection);
+    </script>
+</body>
+
+</html>

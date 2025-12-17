@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание - NEOS DANCE CENTER</title>
+    <link rel="stylesheet" href="rasp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <!-- Навбар - сразу видимый -->
+    <nav class="navbar">
+        <a href="glav.html" class="logo">
+            <img src="img/1-no-bg-preview (carve.photos) (1) 1.svg" alt="NDC Logo">
+        </a>
+
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="rasp.html" style="color: #b90000;">Расписание</a></li>
+                <li><a href="prep.html">Хореографы</a></li>
+                <li><a href="style.html">Стили</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+
+            <a href="tel:+79991234567" class="phone-number">
+                +7 (912) 375-66-71
+            </a>
+        </div>
+    </nav>
+
+    <!-- Герой секция для расписания -->
+    <section class="schedule-hero">
+        <div class="schedule-hero-content">
+            <h1 class="schedule-hero-title">РАСПИСАНИЕ</h1>
+            <h2 class="schedule-hero-subtitle">Выбери свой ритм</h2>
+        </div>
+    </section>
+
+    <!-- Переключатель групп -->
+    <section class="group-selector-section">
+        <div class="group-selector">
+            <button class="group-btn active" data-group="beginners">Начинающие</button>
+            <button class="group-btn" data-group="main">Основное расписание</button>
+        </div>
+        
+        <!-- Календарь расписания -->
+        <div class="schedule-calendar">
+            <!-- Расписание для начинающих -->
+            <div class="schedule-group active" id="beginners-schedule">
+                <div class="calendar-header">
+                    <h3>РАСПИСАНИЕ ДЛЯ НАЧИНАЮЩИХ</h3>
+                </div>
+                
+                <div class="calendar-weekdays">
+                    <div>Понедельник</div>
+                    <div>Вторник</div>
+                    <div>Среда</div>
+                    <div>Четверг</div>
+                    <div>Пятница</div>
+                    <div>Суббота</div>
+                    <div>Воскресенье</div>
+                </div>
+                
+                <div class="calendar-days">
+                    <!-- Понедельник -->
+                    <div class="calendar-day">
+                        <div class="day-number">ПН</div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">17:00 - 18:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Начинающие 12-20 лет (джаз-фанк, афро, дэнсхолл)</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Yummy Crew</div>
+                            <div class="event-style">Начинающие 5-7 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Вторник -->
+                    <div class="calendar-day">
+                        <div class="day-number">ВТ</div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">16:00 - 17:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Хип-хоп, хаус и паппинг (начинающие)</div>
+                            <div class="event-trainer">Тренер: Ульяна и Валерия</div>
+                        </div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Средняя подготовительная группа</div>
+                            <div class="event-style">Начинающие 8-11 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Среда -->
+                    <div class="calendar-day">
+                        <div class="day-number">СР</div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">17:00 - 18:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Начинающие 12-20 лет (джаз-фанк, афро, дэнсхолл)</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Yummy Crew</div>
+                            <div class="event-style">Начинающие 5-7 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Четверг -->
+                    <div class="calendar-day">
+                        <div class="day-number">ЧТ</div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">16:00 - 17:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Хип-хоп, хаус и паппинг (начинающие)</div>
+                            <div class="event-trainer">Тренер: Ульяна и Валерия</div>
+                        </div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Средняя подготовительная группа</div>
+                            <div class="event-style">Начинающие 8-11 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Пятница -->
+                    <div class="calendar-day">
+                        <div class="day-number">ПТ</div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">17:00 - 18:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Начинающие 12-20 лет (джаз-фанк, афро, дэнсхолл)</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Yummy Crew</div>
+                            <div class="event-style">Начинающие 5-7 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Суббота -->
+                    <div class="calendar-day weekend">
+                        <div class="day-number">СБ</div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">15:00 - 16:00</div>
+                            <div class="event-title">Средняя подготовительная группа</div>
+                            <div class="event-style">Начинающие 8-11 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">16:00 - 17:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Хип-хоп, хаус и паппинг (начинающие)</div>
+                            <div class="event-trainer">Тренер: Ульяна и Валерия</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Воскресенье -->
+                    <div class="calendar-day weekend">
+                        <div class="day-number">ВС</div>
+                        <div class="schedule-event beginner-event">
+                            <div class="event-time">Выходной</div>
+                            <div class="event-title">(Возможны дополнительные занятия перед конкурсами)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Основное расписание -->
+            <div class="schedule-group" id="main-schedule">
+                <div class="calendar-header">
+                    <h3>ОСНОВНОЕ РАСПИСАНИЕ</h3>
+                </div>
+                
+                <div class="calendar-weekdays">
+                    <div>Понедельник</div>
+                    <div>Вторник</div>
+                    <div>Среда</div>
+                    <div>Четверг</div>
+                    <div>Пятница</div>
+                    <div>Суббота</div>
+                    <div>Воскресенье</div>
+                </div>
+                
+                <div class="calendar-days">
+                    <!-- Понедельник -->
+                    <div class="calendar-day">
+                        <div class="day-number">ПН</div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">16:00 - 17:00</div>
+                            <div class="event-title">Fizz Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">17:00 - 18:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Начинающие 12-20 лет (джаз-фанк, афро, дэнсхолл)</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">18:00 - 19:00</div>
+                            <div class="event-title">Pixie Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">18:00 - 19:00</div>
+                            <div class="event-title">Prime Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Григорий</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Yummy Crew</div>
+                            <div class="event-style">Начинающие 5-7 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Lit Crew</div>
+                            <div class="event-style">Продолжающие 8-11 лет</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Вторник -->
+                    <div class="calendar-day">
+                        <div class="day-number">ВТ</div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">16:00 - 17:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Хип-хоп, хаус и паппинг (начинающие)</div>
+                            <div class="event-trainer">Тренер: Ульяна и Валерия</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">17:00 - 18:00</div>
+                            <div class="event-title">Your Vision Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">18:00 - 19:00</div>
+                            <div class="event-title">Light Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Григорий</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Средняя подготовительная группа</div>
+                            <div class="event-style">Начинающие 8-11 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Punchy Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Среда -->
+                    <div class="calendar-day">
+                        <div class="day-number">СР</div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">16:00 - 17:00</div>
+                            <div class="event-title">Fizz Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">17:00 - 18:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Начинающие 12-20 лет (джаз-фанк, афро, дэнсхолл)</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">18:00 - 19:00</div>
+                            <div class="event-title">Pixie Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">18:00 - 19:00</div>
+                            <div class="event-title">Prime Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Григорий</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Yummy Crew</div>
+                            <div class="event-style">Начинающие 5-7 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Lit Crew</div>
+                            <div class="event-style">Продолжающие 8-11 лет</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Четверг -->
+                    <div class="calendar-day">
+                        <div class="day-number">ЧТ</div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">16:00 - 17:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Хип-хоп, хаус и паппинг (начинающие)</div>
+                            <div class="event-trainer">Тренер: Ульяна и Валерия</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">17:00 - 18:00</div>
+                            <div class="event-title">Your Vision Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">18:00 - 19:00</div>
+                            <div class="event-title">Light Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Григорий</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Средняя подготовительная группа</div>
+                            <div class="event-style">Начинающие 8-11 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Punchy Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Пятница -->
+                    <div class="calendar-day">
+                        <div class="day-number">ПТ</div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">16:00 - 17:00</div>
+                            <div class="event-title">Fizz Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">17:00 - 18:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Начинающие 12-20 лет (джаз-фанк, афро, дэнсхолл)</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">18:00 - 19:00</div>
+                            <div class="event-title">Pixie Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">18:00 - 19:00</div>
+                            <div class="event-title">Prime Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Григорий</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Yummy Crew</div>
+                            <div class="event-style">Начинающие 5-7 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">19:00 - 20:00</div>
+                            <div class="event-title">Lit Crew</div>
+                            <div class="event-style">Продолжающие 8-11 лет</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Суббота -->
+                    <div class="calendar-day weekend">
+                        <div class="day-number">СБ</div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">15:00 - 16:00</div>
+                            <div class="event-title">Средняя подготовительная группа</div>
+                            <div class="event-style">Начинающие 8-11 лет</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">15:00 - 16:00</div>
+                            <div class="event-title">Light Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Григорий</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">16:00 - 17:00</div>
+                            <div class="event-title">Старшие подготовительные</div>
+                            <div class="event-style">Хип-хоп, хаус и паппинг (начинающие)</div>
+                            <div class="event-trainer">Тренер: Ульяна и Валерия</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">17:00 - 18:00</div>
+                            <div class="event-title">Your Vision Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Екатерина</div>
+                        </div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">18:00 - 20:00</div>
+                            <div class="event-title">Punchy Crew</div>
+                            <div class="event-style">Продолжающие</div>
+                            <div class="event-trainer">Тренер: Елизавета</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Воскресенье -->
+                    <div class="calendar-day weekend">
+                        <div class="day-number">ВС</div>
+                        <div class="schedule-event main-event">
+                            <div class="event-time">Выходной</div>
+                            <div class="event-title">(Возможны дополнительные занятия перед конкурсами)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок с важной информацией -->
+    <section class="important-info-section">
+        <div class="important-info-container">
+            <div class="important-info-content">
+                <h3 class="important-info-title">Важная информация!</h3>
+                <p class="important-info-text">
+                    Иногда тренировки могут проводится в воскресенье. Это делается если команда не успевает подготовится перед конкурсом/чемпионатом. 
+                    Команды <span class="highlight-red-bold">заранее</span> предупреждены об этом.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Компактный красный баннер -->
+    <div class="red-banner" id="redBanner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <div class="banner-title">ВНИМАНИЕ!</div>
+                <div class="banner-message">
+                    Перед тем, как записаться на занятие уточняйте расписание по телефону +7 (912) 375-66-71 или пишите нам в Телеграмм или в Ватсап
+                </div>
+            </div>
+            <div class="banner-contacts">
+                <a href="tel:+7888999988" class="contact-link">
+                    <i class="fas fa-phone"></i> +7 (912) 375-66-71
+                </a>
+                <a href="https://t.me/LizaBarash" class="contact-link" target="_blank">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a>
+                <a href="https://wa.me/7888999988" class="contact-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WatsApp
+                </a>
+            </div>
+            <button class="banner-close" id="bannerClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+ <!-- Новый блок с видео тренировок -->
+    <section class="training-videos-section">
+        <div class="videos-container">
+            <div class="videos-header">
+                <h2 class="videos-title">ЖИЗНЬ В РИТМЕ ТАНЦА</h2>
+                <p class="videos-subtitle">Увидьте, как проходят наши тренировки и почувствуйте атмосферу студии</p>
+            </div>
+
+            <div class="videos-scroll-container">
+                <div class="videos-track" id="videosTrack">
+                    <!-- Видео 1 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video class="training-video" muted loop playsinline>
+                                <source src="videos/prime-video.mp4.mp4" type="video/mp4">
+                            
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="video-info">
+                                    <h4>Prime Crew</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Видео 2 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video class="training-video" muted loop playsinline>
+                                <source src="videos/dance4-studio-video.mp4.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="video-info">
+                                    <h4>Punchy Crew</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Видео 3 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video class="training-video" muted loop playsinline>
+                                <source src="videos/lite-video.mp4.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео тег.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="video-info">
+                                    <h4>Lite Crew</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Видео 4 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video class="training-video" muted loop playsinline>
+                                <source src="videos/yummy-video.mp4.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео тег.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="video-info">
+                                    <h4>Yummy Crew</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Видео 5 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video class="training-video" muted loop playsinline>
+                                <source src="videos/pixie-video.mp4.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео тег.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="video-info">
+                                    <h4>Pixie Crew</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Видео 6 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video class="training-video" muted loop playsinline>
+                                <source src="videos/fizz-video.mp4.MOV" type="video/mp4">
+                                Ваш браузер не поддерживает видео тег.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="video-info">
+                                    <h4>Fizz Crew</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Видео 7 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video class="training-video" muted loop playsinline>
+                                <source src="videos/starpod-video.mp4.MOV" type="video/mp4">
+                                Ваш браузер не поддерживает видео тег.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="video-info">
+                                    <h4>Старшие подготовительные</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos-controls">
+                <button class="control-btn prev-btn" id="prevVideo">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="video-dots" id="videoDots"></div>
+                <button class="control-btn next-btn" id="nextVideo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="videos-footer">
+                <p>Присоединяйтесь к нашей танцевальной семье и станьте частью этой энергии!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для полноэкранного видео -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <video class="fullscreen-video" controls id="fullscreenVideo">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+            <div class="video-modal-info">
+                <h3 id="modalVideoTitle"></h3>
+                <p id="modalVideoDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Компактный красный баннер -->
+    <div class="red-banner" id="redBanner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <div class="banner-title">ВНИМАНИЕ!</div>
+                <div class="banner-message">
+                    Перед тем, как записаться на занятие уточняйте расписание по телефону +7 (912) 375-66-71 или пишите нам в Телеграмм или в Ватсап
+                </div>
+            </div>
+            <div class="banner-contacts">
+                <a href="tel:+7888999988" class="contact-link">
+                    <i class="fas fa-phone"></i> +7 (912) 375-66-71
+                </a>
+                <a href="https://t.me/LizaBarash" class="contact-link" target="_blank">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a>
+                <a href="https://wa.me/7888999988" class="contact-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WatsApp
+                </a>
+            </div>
+            <button class="banner-close" id="bannerClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+      <script>
+        // Переключение между группами
+        document.addEventListener('DOMContentLoaded', function() {
+            // ... существующий код для расписания ...
+
+              // Инициализация блока с видео
+            initTrainingVideos();
+
+            // Анимация появления блока с видео
+            const videosSection = document.querySelector('.training-videos-section');
+            const videosObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            if (videosSection) {
+                videosObserver.observe(videosSection);
+            }
+        });
+
+        // Функция для инициализации блока с видео
+        function initTrainingVideos() {
+            const videosTrack = document.getElementById('videosTrack');
+            const prevBtn = document.getElementById('prevVideo');
+            const nextBtn = document.getElementById('nextVideo');
+            const videoDots = document.getElementById('videoDots');
+            const videoItems = document.querySelectorAll('.video-item');
+            const videos = document.querySelectorAll('.training-video');
+            const videoModal = document.getElementById('videoModal');
+            const modalClose = document.getElementById('modalClose');
+            const fullscreenVideo = document.getElementById('fullscreenVideo');
+            const modalVideoTitle = document.getElementById('modalVideoTitle');
+            const modalVideoDescription = document.getElementById('modalVideoDescription');
+
+            let currentPosition = 0;
+            const videoWidth = 430; // 400px + 30px gap
+            const visibleVideos = Math.floor(document.querySelector('.videos-scroll-container').offsetWidth / videoWidth);
+            const maxPosition = (videoItems.length - visibleVideos) * videoWidth;
+            let autoScrollInterval;
+            let isVideoPlaying = false;
+
+            // Создаем точки навигации
+            videoItems.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.className = 'video-dot' + (index === 0 ? ' active' : '');
+                dot.addEventListener('click', () => {
+                    scrollToVideo(index);
+                });
+                videoDots.appendChild(dot);
+            });
+
+            // Функция прокрутки к видео
+            function scrollToVideo(index) {
+                currentPosition = Math.min(index * videoWidth, maxPosition);
+                updateVideosPosition();
+                updateDots();
+            }
+
+            // Обновление позиции видео
+            function updateVideosPosition() {
+                videosTrack.style.transform = `translateX(-${currentPosition}px)`;
+            }
+
+            // Обновление активной точки
+            function updateDots() {
+                const activeIndex = Math.round(currentPosition / videoWidth);
+                document.querySelectorAll('.video-dot').forEach((dot, index) => {
+                    dot.classList.toggle('active', index === activeIndex);
+                });
+            }
+
+            // Запуск/остановка автопрокрутки
+            function startAutoScroll() {
+                if (!isVideoPlaying) {
+                    autoScrollInterval = setInterval(() => {
+                        if (currentPosition >= maxPosition) {
+                            currentPosition = 0;
+                        } else {
+                            currentPosition += videoWidth;
+                        }
+                        updateVideosPosition();
+                        updateDots();
+                    }, 5000);
+                }
+            }
+
+            function stopAutoScroll() {
+                clearInterval(autoScrollInterval);
+            }
+
+            // Кнопка "назад"
+            prevBtn.addEventListener('click', () => {
+                stopAutoScroll();
+                currentPosition = Math.max(0, currentPosition - videoWidth);
+                updateVideosPosition();
+                updateDots();
+                startAutoScroll();
+            });
+
+            // Кнопка "вперед"
+            nextBtn.addEventListener('click', () => {
+                stopAutoScroll();
+                currentPosition = Math.min(maxPosition, currentPosition + videoWidth);
+                updateVideosPosition();
+                updateDots();
+                startAutoScroll();
+            });
+
+            // Открытие видео в полноэкранном режиме
+            videoItems.forEach((item, index) => {
+                const video = videos[index];
+                const videoSrc = video.querySelector('source').src;
+                const videoTitle = item.querySelector('.video-info h4').textContent;
+                const videoDescription = item.querySelector('.video-info p').textContent;
+                
+                item.addEventListener('click', () => {
+                    // Останавливаем автопрокрутку
+                    stopAutoScroll();
+                    isVideoPlaying = true;
+                    
+                    // Устанавливаем видео в модальное окно
+                    fullscreenVideo.src = videoSrc;
+                    modalVideoTitle.textContent = videoTitle;
+                    modalVideoDescription.textContent = videoDescription;
+                    
+                    // Показываем модальное окно
+                    videoModal.classList.add('active');
+                    
+                    // Воспроизводим видео
+                    setTimeout(() => {
+                        fullscreenVideo.play().catch(e => {
+                            console.log('Автовоспроизведение заблокировано:', e);
+                        });
+                    }, 300);
+                });
+            });
+
+            // Закрытие модального окна
+            modalClose.addEventListener('click', () => {
+                fullscreenVideo.pause();
+                fullscreenVideo.src = '';
+                videoModal.classList.remove('active');
+                isVideoPlaying = false;
+                startAutoScroll();
+            });
+
+            // Закрытие модального окна по клику на фон
+            videoModal.addEventListener('click', (e) => {
+                if (e.target === videoModal) {
+                    fullscreenVideo.pause();
+                    fullscreenVideo.src = '';
+                    videoModal.classList.remove('active');
+                    isVideoPlaying = false;
+                    startAutoScroll();
+                }
+            });
+
+            // Закрытие модального окна по ESC
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+                    fullscreenVideo.pause();
+                    fullscreenVideo.src = '';
+                    videoModal.classList.remove('active');
+                    isVideoPlaying = false;
+                    startAutoScroll();
+                }
+            });
+
+            // Обработка окончания видео
+            fullscreenVideo.addEventListener('ended', () => {
+                // Автоматически не закрываем, чтобы пользователь мог пересмотреть
+            });
+
+            // Обработка изменения размера окна
+            window.addEventListener('resize', () => {
+                const newVisibleVideos = Math.floor(document.querySelector('.videos-scroll-container').offsetWidth / videoWidth);
+                const newMaxPosition = (videoItems.length - newVisibleVideos) * videoWidth;
+                currentPosition = Math.min(currentPosition, newMaxPosition);
+                updateVideosPosition();
+            });
+
+            // Запускаем автопрокрутку при загрузке
+            startAutoScroll();
+        }
+    </script>
+
+    <!-- Футер -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Лого и описание -->
+                <div class="footer-info">
+                    <div class="footer-logo">NEOS DANCE CENTER</div>
+                    <p class="footer-description">
+                        Профессиональная танцевальная студия, где каждый найдет свой стиль и раскроет творческий потенциал. 
+                        Присоединяйтесь к нашей танцевальной семье!
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me/LizaBarash" class="social-link" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Навигация -->
+                <div class="footer-nav">
+                    <h3>РАЗДЕЛЫ</h3>
+                    <ul class="footer-links">
+                        <li><a href="rasp.html">Расписание</a></li>
+                        <li><a href="index.html#about">О нас</a></li>
+                        <li><a href="index.html#trainers">Хореографы</a></li>
+                        <li><a href="index.html#styles">Стили</a></li>
+                        <li><a href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <!-- Контакты -->
+                <div class="footer-contacts">
+                    <h3>КОНТАКТЫ</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Чкалова 35/1, ТЦ "Европа-Азия" 3 этаж</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (999) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Пт: 9:00 - 22:00<br>Сб-Вс: 10:00 - 20:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 NEOS DANCE CENTER. Все права защищены.</p>
+                </div>
+                <div class="footer-center-text">
+                    <span>NEOS DANCE CENTER</span>
+                </div>
+                <div class="footer-developer">
+                    <p>Разработано с <i class="fas fa-heart"></i> для танцоров</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Стрелка для прокрутки наверх -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+
+    <script>
+        // ========================================
+// ОСНОВНОЙ СКРИПТ ДЛЯ СТРАНИЦЫ РАСПИСАНИЯ
+// ========================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Инициализация всех функций
+    initBurgerMenu();
+    initRedBanner(); // Инициализация красного баннера
+    initGroupSelector();
+    initScheduleAnimations();
+    initScrollToTop();
+    initTrainingVideos();
+    initFooterAnimation();
+    initPageObservers();
+    
+    console.log('Страница расписания загружена и инициализирована');
+});
+
+// ========================================
+// БУРГЕР-МЕНЮ
+// ========================================
+
+function initBurgerMenu() {
+    console.log('Инициализация бургер-меню...');
+    
+    // Создаем элементы для мобильного меню, если их нет
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+    
+    // Проверяем, есть ли уже бургер-меню
+    if (!document.getElementById('burgerMenu')) {
+        // Создаем кнопку бургер-меню
+        const menuToggle = document.createElement('div');
+        menuToggle.className = 'burger-menu';
+        menuToggle.id = 'burgerMenu';
+        menuToggle.innerHTML = '<span></span><span></span><span></span>';
+        navbar.appendChild(menuToggle);
+    }
+    
+    // Создаем оверлей для затемнения фона
+    if (!document.querySelector('.menu-overlay')) {
+        const menuOverlay = document.createElement('div');
+        menuOverlay.className = 'menu-overlay';
+        document.body.appendChild(menuOverlay);
+    }
+    
+    const menuToggle = document.getElementById('burgerMenu');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    const navContainer = document.querySelector('.nav-container');
+    
+    if (!menuToggle || !navContainer) return;
+    
+    // Функция переключения меню
+    function toggleMenu() {
+        const isActive = navContainer.classList.contains('active');
+        
+        console.log('Переключение меню:', !isActive ? 'открытие' : 'закрытие');
+        
+        // Переключаем классы
+        menuToggle.classList.toggle('active');
+        navContainer.classList.toggle('active');
+        menuOverlay.classList.toggle('active');
+        
+        // Блокируем/разблокируем скролл страницы
+        if (!isActive) {
+            document.body.style.overflow = 'hidden';
+            document.documentElement.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
+        }
+    }
+    
+    // Обработчики событий для кнопки меню
+    menuToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleMenu();
+    });
+    
+    // Закрытие меню при клике на оверлей
+    menuOverlay.addEventListener('click', function(e) {
+        if (navContainer.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+    
+    // Закрытие меню при клике на ссылки
+    const navLinks = document.querySelectorAll('.nav-links a, .phone-number');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (navContainer.classList.contains('active')) {
+                console.log('Закрытие меню по клику на ссылку');
+                toggleMenu();
+            }
+        });
+    });
+    
+    // Закрытие меню при ресайзе окна (десктоп)
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && navContainer.classList.contains('active')) {
+            console.log('Закрытие меню при ресайзе на десктоп');
+            toggleMenu();
+        }
+    });
+    
+    // Закрытие меню по клавише ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && navContainer.classList.contains('active')) {
+            console.log('Закрытие меню по ESC');
+            toggleMenu();
+        }
+    });
+    
+    // Закрытие меню при клике вне его области
+    document.addEventListener('click', function(e) {
+        if (navContainer.classList.contains('active') && 
+            !navContainer.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+            console.log('Закрытие меню по клику вне области');
+            toggleMenu();
+        }
+    });
+    
+    console.log('Бургер-меню инициализировано');
+}
+
+// ========================================
+// АВТОМАТИЧЕСКИЙ ПОКАЗ КРАСНОГО БАННЕРА
+// ========================================
+
+function initRedBanner() {
+    console.log('Инициализация красного баннера...');
+    
+    const redBanner = document.getElementById('redBanner');
+    const bannerClose = document.getElementById('bannerClose');
+    
+    if (!redBanner) {
+        console.warn('Красный баннер не найден в DOM');
+        return;
+    }
+    
+    // Проверяем, был ли баннер закрыт пользователем
+    const bannerClosed = localStorage.getItem('redBannerClosed');
+    
+    // Показываем баннер только если он не был закрыт ранее
+    if (bannerClosed !== 'true') {
+        // Ждем немного, чтобы страница полностью загрузилась
+        setTimeout(() => {
+            console.log('Показ красного баннера');
+            
+            // Убедимся, что баннер видим
+            redBanner.style.display = 'block';
+            
+            // Даем время для применения CSS
+            setTimeout(() => {
+                // Добавляем класс show для анимации
+                redBanner.classList.add('show');
+            }, 50);
+            
+        }, 1000); // Задержка 1 секунда
+    } else {
+        console.log('Баннер был закрыт ранее, не показываем');
+        redBanner.style.display = 'none';
+    }
+    
+    // Обработчик закрытия баннера
+    if (bannerClose) {
+        bannerClose.addEventListener('click', function() {
+            console.log('Закрытие красного баннера');
+            
+            // Убираем класс show для анимации закрытия
+            redBanner.classList.remove('show');
+            
+            // Ждем окончания анимации и скрываем баннер
+            setTimeout(() => {
+                redBanner.style.display = 'none';
+            }, 500);
+            
+            // Сохраняем в localStorage, что баннер был закрыт
+            localStorage.setItem('redBannerClosed', 'true');
+            
+            // Отправляем событие для аналитики
+            try {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'red_banner_closed', {
+                        'event_category': 'engagement',
+                        'event_label': 'schedule_page'
+                    });
+                }
+            } catch (e) {
+                console.log('Аналитика не доступна:', e);
+            }
+        });
+    }
+    
+    // Закрытие баннера при клике на ссылки (кроме телефона)
+    const bannerLinks = redBanner.querySelectorAll('.contact-link');
+    bannerLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (!this.href.includes('tel:')) {
+                console.log('Клик по ссылке в баннере');
+                // Не закрываем баннер при клике на внешние ссылки
+            }
+        });
+    });
+    
+    console.log('Красный баннер инициализирован');
+}
+
+// ========================================
+// ПЕРЕКЛЮЧАТЕЛЬ ГРУПП РАСПИСАНИЯ
+// ========================================
+
+function initGroupSelector() {
+    console.log('Инициализация переключателя групп...');
+    
+    const groupBtns = document.querySelectorAll('.group-btn');
+    const scheduleGroups = document.querySelectorAll('.schedule-group');
+
+    if (groupBtns.length === 0 || scheduleGroups.length === 0) {
+        console.warn('Элементы переключателя групп не найдены');
+        return;
+    }
+
+    // Функция переключения активной группы
+    function switchGroup(groupName) {
+        console.log('Переключение на группу:', groupName);
+        
+        // Убираем активный класс у всех кнопок
+        groupBtns.forEach(b => b.classList.remove('active'));
+        
+        // Добавляем активный класс выбранной кнопке
+        const activeBtn = document.querySelector(`[data-group="${groupName}"]`);
+        if (activeBtn) {
+            activeBtn.classList.add('active');
+        }
+        
+        // Скрываем все группы расписания
+        scheduleGroups.forEach(group => group.classList.remove('active'));
+        
+        // Показываем выбранную группу
+        const targetGroup = document.getElementById(`${groupName}-schedule`);
+        if (targetGroup) {
+            targetGroup.classList.add('active');
+            
+            // Запускаем анимацию событий в выбранной группе
+            setTimeout(() => {
+                animateScheduleEvents(targetGroup);
+            }, 300);
+        }
+        
+        // Сохраняем выбор в localStorage
+        localStorage.setItem('selectedScheduleGroup', groupName);
+        
+        // Отправляем событие для аналитики
+        try {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'schedule_group_switch', {
+                    'event_category': 'engagement',
+                    'event_label': groupName
+                });
+            }
+        } catch (e) {
+            console.log('Аналитика не доступна:', e);
+        }
+    }
+
+    // Добавляем обработчики кликов на кнопки
+    groupBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const groupName = this.getAttribute('data-group');
+            switchGroup(groupName);
+        });
+        
+        // Добавляем поддержку клавиатуры
+        btn.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                const groupName = this.getAttribute('data-group');
+                switchGroup(groupName);
+            }
+        });
+    });
+
+    // Восстанавливаем последний выбор пользователя
+    const savedGroup = localStorage.getItem('selectedScheduleGroup');
+    if (savedGroup) {
+        const savedBtn = document.querySelector(`[data-group="${savedGroup}"]`);
+        if (savedBtn) {
+            setTimeout(() => {
+                switchGroup(savedGroup);
+            }, 100);
+        }
+    } else {
+        // По умолчанию активируем первую кнопку
+        if (groupBtns[0]) {
+            setTimeout(() => {
+                const defaultGroup = groupBtns[0].getAttribute('data-group');
+                switchGroup(defaultGroup);
+            }, 100);
+        }
+    }
+    
+    console.log('Переключатель групп инициализирован');
+}
+
+// ========================================
+// АНИМАЦИИ РАСПИСАНИЯ
+// ========================================
+
+function initScheduleAnimations() {
+    console.log('Инициализация анимаций расписания...');
+    
+    // Функция для анимации событий в конкретной группе
+    function animateScheduleEvents(groupElement) {
+        const events = groupElement.querySelectorAll('.schedule-event');
+        
+        events.forEach((event, index) => {
+            // Сбрасываем анимацию
+            event.classList.remove('visible');
+            
+            // Запускаем анимацию с задержкой
+            setTimeout(() => {
+                event.classList.add('visible');
+            }, index * 50); // Увеличенная задержка для лучшего восприятия
+        });
+    }
+    
+    // Инициализация Intersection Observer для событий
+    const scheduleEvents = document.querySelectorAll('.schedule-event');
+    
+    if (scheduleEvents.length > 0) {
+        const eventObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Прекращаем наблюдение после появления
+                    eventObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Начинаем наблюдение за всеми событиями
+        scheduleEvents.forEach((event, index) => {
+            event.style.setProperty('--item-index', index);
+            eventObserver.observe(event);
+        });
+        
+        console.log('Анимации расписания инициализированы для', scheduleEvents.length, 'событий');
+    }
+    
+    // Адаптивный календарь для мобильных
+    function adaptCalendarForMobile() {
+        const calendarDays = document.querySelectorAll('.calendar-day');
+        const isMobile = window.innerWidth <= 768;
+        
+        if (isMobile && calendarDays.length > 0) {
+            console.log('Адаптация календаря для мобильных');
+            
+            const dayNames = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+            
+            calendarDays.forEach((day, index) => {
+                if (index < 7) {
+                    const dayNumber = day.querySelector('.day-number');
+                    if (dayNumber) {
+                        // Сохраняем оригинальный текст
+                        const originalText = dayNumber.textContent.split(' - ')[0] || dayNumber.textContent;
+                        dayNumber.textContent = `${originalText} - ${dayNames[index]}`;
+                        dayNumber.dataset.original = originalText;
+                    }
+                }
+            });
+        } else if (calendarDays.length > 0) {
+            // Восстанавливаем оригинальные названия дней для десктопа
+            calendarDays.forEach((day, index) => {
+                if (index < 7) {
+                    const dayNumber = day.querySelector('.day-number');
+                    if (dayNumber && dayNumber.dataset.original) {
+                        dayNumber.textContent = dayNumber.dataset.original;
+                    }
+                }
+            });
+        }
+    }
+    
+    // Инициализация адаптации при загрузке
+    adaptCalendarForMobile();
+    
+    // Обработчик изменения размера окна
+    let resizeTimeout;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            adaptCalendarForMobile();
+        }, 250);
+    });
+}
+
+// ========================================
+// ПРОКРУТКА НАВЕРХ
+// ========================================
+
+function initScrollToTop() {
+    console.log('Инициализация кнопки прокрутки наверх...');
+    
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    
+    if (!scrollToTopBtn) {
+        console.warn('Кнопка прокрутки наверх не найдена');
+        return;
+    }
+
+    // Показываем/скрываем стрелку при прокрутке
+    function handleScroll() {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    }
+
+    // Прокрутка наверх при клике
+    scrollToTopBtn.addEventListener('click', function() {
+        console.log('Прокрутка наверх');
+        
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        
+        // Отправляем событие для аналитики
+        try {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'scroll_to_top', {
+                    'event_category': 'engagement',
+                    'event_label': 'schedule_page'
+                });
+            }
+        } catch (e) {
+            console.log('Аналитика не доступна:', e);
+        }
+    });
+
+    // Поддержка клавиатуры
+    scrollToTopBtn.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    });
+
+    // Инициализация при загрузке
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Проверяем начальное состояние
+    
+    console.log('Кнопка прокрутки наверх инициализирована');
+}
+
+// ========================================
+// ВИДЕО СЛАЙДЕР
+// ========================================
+
+function initTrainingVideos() {
+    console.log('Инициализация видео слайдера...');
+    
+    const videosTrack = document.getElementById('videosTrack');
+    const prevBtn = document.getElementById('prevVideo');
+    const nextBtn = document.getElementById('nextVideo');
+    const videoDots = document.getElementById('videoDots');
+    const videoItems = document.querySelectorAll('.video-item');
+    const videos = document.querySelectorAll('.training-video');
+    const videoModal = document.getElementById('videoModal');
+    const modalClose = document.getElementById('modalClose');
+    const fullscreenVideo = document.getElementById('fullscreenVideo');
+    const modalVideoTitle = document.getElementById('modalVideoTitle');
+    const modalVideoDescription = document.getElementById('modalVideoDescription');
+
+    if (!videosTrack || videoItems.length === 0) {
+        console.warn('Элементы видео слайдера не найдены');
+        return;
+    }
+
+    let currentPosition = 0;
+    let currentVideoWidth = 0;
+    let maxPosition = 0;
+    let autoScrollInterval = null;
+    let isVideoPlaying = false;
+    let isAutoScrollEnabled = true;
+
+    // Инициализация слайдера
+    function initSlider() {
+        updateVideoWidth();
+        createDots();
+        updateVideosPosition();
+        updateDots();
+        
+        if (isAutoScrollEnabled) {
+            startAutoScroll();
+        }
+    }
+
+    // Обновление ширины видео элементов
+    function updateVideoWidth() {
+        const container = document.querySelector('.videos-scroll-container');
+        if (!container) return;
+        
+        const containerWidth = container.offsetWidth;
+        const isMobile = window.innerWidth <= 768;
+        const isTablet = window.innerWidth <= 1024 && window.innerWidth > 768;
+        
+        if (isMobile) {
+            currentVideoWidth = containerWidth * 0.85; // 85% ширины контейнера
+        } else if (isTablet) {
+            currentVideoWidth = 350;
+        } else {
+            currentVideoWidth = 400;
+        }
+        
+        // Применяем ширину к элементам
+        videoItems.forEach(item => {
+            item.style.flex = `0 0 ${currentVideoWidth}px`;
+            item.style.height = `${currentVideoWidth * 0.625}px`;
+        });
+        
+        // Пересчитываем максимальную позицию
+        const visibleVideos = Math.floor(containerWidth / (currentVideoWidth + 30));
+        maxPosition = Math.max(0, (videoItems.length - visibleVideos) * (currentVideoWidth + 30));
+        
+        // Корректируем текущую позицию
+        currentPosition = Math.min(currentPosition, maxPosition);
+    }
+
+    // Создание точек навигации
+    function createDots() {
+        if (!videoDots) return;
+        
+        videoDots.innerHTML = '';
+        const visibleVideos = Math.floor(document.querySelector('.videos-scroll-container').offsetWidth / (currentVideoWidth + 30));
+        const totalDots = Math.max(1, videoItems.length - visibleVideos + 1);
+        
+        for (let i = 0; i < totalDots; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'video-dot';
+            dot.setAttribute('data-index', i);
+            dot.setAttribute('aria-label', `Перейти к видео ${i + 1}`);
+            
+            dot.addEventListener('click', () => {
+                scrollToVideo(i);
+            });
+            
+            videoDots.appendChild(dot);
+        }
+    }
+
+    // Прокрутка к конкретному видео
+    function scrollToVideo(index) {
+        stopAutoScroll();
+        currentPosition = Math.min(index * (currentVideoWidth + 30), maxPosition);
+        updateVideosPosition();
+        updateDots();
+        
+        // Перезапускаем автопрокрутку через 5 секунд
+        setTimeout(() => {
+            if (isAutoScrollEnabled && !isVideoPlaying) {
+                startAutoScroll();
+            }
+        }, 5000);
+    }
+
+    // Обновление позиции трека
+    function updateVideosPosition() {
+        videosTrack.style.transform = `translateX(-${currentPosition}px)`;
+        videosTrack.style.transition = 'transform 0.5s ease';
+    }
+
+    // Обновление активной точки
+    function updateDots() {
+        const dots = document.querySelectorAll('.video-dot');
+        if (dots.length === 0) return;
+        
+        const activeIndex = Math.round(currentPosition / (currentVideoWidth + 30));
+        
+        dots.forEach((dot, index) => {
+            if (index === activeIndex) {
+                dot.classList.add('active');
+                dot.setAttribute('aria-current', 'true');
+            } else {
+                dot.classList.remove('active');
+                dot.removeAttribute('aria-current');
+            }
+        });
+    }
+
+    // Автоматическая прокрутка
+    function startAutoScroll() {
+        if (autoScrollInterval || isVideoPlaying || !isAutoScrollEnabled) return;
+        
+        autoScrollInterval = setInterval(() => {
+            if (currentPosition >= maxPosition) {
+                currentPosition = 0;
+            } else {
+                currentPosition += currentVideoWidth + 30;
+            }
+            updateVideosPosition();
+            updateDots();
+        }, 5000); // 5 секунд
+    }
+
+    function stopAutoScroll() {
+        if (autoScrollInterval) {
+            clearInterval(autoScrollInterval);
+            autoScrollInterval = null;
+        }
+    }
+
+    // Кнопка "назад"
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            stopAutoScroll();
+            currentPosition = Math.max(0, currentPosition - (currentVideoWidth + 30));
+            updateVideosPosition();
+            updateDots();
+            
+            setTimeout(() => {
+                if (isAutoScrollEnabled && !isVideoPlaying) {
+                    startAutoScroll();
+                }
+            }, 5000);
+        });
+    }
+
+    // Кнопка "вперед"
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            stopAutoScroll();
+            currentPosition = Math.min(maxPosition, currentPosition + (currentVideoWidth + 30));
+            updateVideosPosition();
+            updateDots();
+            
+            setTimeout(() => {
+                if (isAutoScrollEnabled && !isVideoPlaying) {
+                    startAutoScroll();
+                }
+            }, 5000);
+        });
+    }
+
+    // Открытие видео в полноэкранном режиме
+    videoItems.forEach((item, index) => {
+        const video = videos[index];
+        if (!video) return;
+        
+        const videoSource = video.querySelector('source');
+        if (!videoSource) return;
+        
+        const videoSrc = videoSource.src;
+        const videoTitle = item.querySelector('.video-info h4')?.textContent || 'Видео';
+        const videoDescription = item.querySelector('.video-info p')?.textContent || '';
+        
+        // Обработчик клика по видео
+        item.addEventListener('click', () => {
+            console.log('Открытие видео:', videoTitle);
+            
+            // Останавливаем автопрокрутку
+            stopAutoScroll();
+            isVideoPlaying = true;
+            
+            // Устанавливаем видео в модальное окно
+            if (fullscreenVideo) {
+                fullscreenVideo.src = videoSrc;
+                fullscreenVideo.load();
+            }
+            
+            if (modalVideoTitle) {
+                modalVideoTitle.textContent = videoTitle;
+            }
+            
+            if (modalVideoDescription) {
+                modalVideoDescription.textContent = videoDescription;
+            }
+            
+            // Показываем модальное окно
+            if (videoModal) {
+                videoModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                
+                // Воспроизводим видео с небольшой задержкой
+                setTimeout(() => {
+                    if (fullscreenVideo) {
+                        fullscreenVideo.play().catch(e => {
+                            console.log('Автовоспроизведение заблокировано:', e);
+                            // Показываем кнопку воспроизведения
+                        });
+                    }
+                }, 300);
+                
+                // Отправляем событие для аналитики
+                try {
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'video_play', {
+                            'event_category': 'engagement',
+                            'event_label': videoTitle
+                        });
+                    }
+                } catch (e) {
+                    console.log('Аналитика не доступна:', e);
+                }
+            }
+        });
+        
+        // Поддержка клавиатуры
+        item.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                item.click();
+            }
+        });
+        
+        // Устанавливаем tabindex для доступности
+        item.setAttribute('tabindex', '0');
+        item.setAttribute('role', 'button');
+        item.setAttribute('aria-label', `Воспроизвести видео: ${videoTitle}`);
+    });
+
+    // Закрытие модального окна
+    if (modalClose) {
+        modalClose.addEventListener('click', () => {
+            closeVideoModal();
+        });
+        
+        // Поддержка клавиатуры
+        modalClose.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                closeVideoModal();
+            }
+        });
+    }
+
+    // Функция закрытия модального окна
+    function closeVideoModal() {
+        console.log('Закрытие видео');
+        
+        if (fullscreenVideo) {
+            fullscreenVideo.pause();
+            fullscreenVideo.src = '';
+        }
+        
+        if (videoModal) {
+            videoModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        isVideoPlaying = false;
+        
+        // Перезапускаем автопрокрутку через 2 секунды
+        setTimeout(() => {
+            if (isAutoScrollEnabled) {
+                startAutoScroll();
+            }
+        }, 2000);
+    }
+
+    // Закрытие модального окна по клику на фон
+    if (videoModal) {
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                closeVideoModal();
+            }
+        });
+    }
+
+    // Закрытие модального окна по ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && videoModal && videoModal.classList.contains('active')) {
+            closeVideoModal();
+        }
+    });
+
+    // Обработка окончания видео
+    if (fullscreenVideo) {
+        fullscreenVideo.addEventListener('ended', () => {
+            console.log('Видео завершено');
+            // Автоматически не закрываем
+        });
+    }
+
+    // Обработка ошибок видео
+    if (fullscreenVideo) {
+        fullscreenVideo.addEventListener('error', (e) => {
+            console.error('Ошибка загрузки видео:', e);
+            // Можно показать сообщение об ошибке
+            if (modalVideoTitle) {
+                modalVideoTitle.textContent = 'Ошибка загрузки видео';
+            }
+        });
+    }
+
+    // Обработчик изменения размера окна
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            updateVideoWidth();
+            createDots();
+            updateVideosPosition();
+            updateDots();
+        }, 250);
+    });
+
+    // Пауза автопрокрутки при наведении на слайдер
+    const scrollContainer = document.querySelector('.videos-scroll-container');
+    if (scrollContainer) {
+        scrollContainer.addEventListener('mouseenter', () => {
+            isAutoScrollEnabled = false;
+            stopAutoScroll();
+        });
+        
+        scrollContainer.addEventListener('mouseleave', () => {
+            isAutoScrollEnabled = true;
+            if (!isVideoPlaying) {
+                startAutoScroll();
+            }
+        });
+    }
+
+    // Инициализация при загрузке
+    initSlider();
+    
+    console.log('Видео слайдер инициализирован с', videoItems.length, 'видео');
+}
+
+// ========================================
+// АНИМАЦИЯ ФУТЕРА
+// ========================================
+
+function initFooterAnimation() {
+    console.log('Инициализация анимации футера...');
+    
+    const footerSection = document.querySelector('.footer-section');
+    
+    if (!footerSection) {
+        console.warn('Футер не найден');
+        return;
+    }
+
+    const footerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                console.log('Футер появился в зоне видимости');
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px 0px 0px'
+    });
+
+    footerObserver.observe(footerSection);
+    
+    console.log('Анимация футера инициализирована');
+}
+
+// ========================================
+// НАБЛЮДАТЕЛИ СТРАНИЦЫ
+// ========================================
+
+function initPageObservers() {
+    console.log('Инициализация наблюдателей страницы...');
+    
+    // Наблюдатель для секции с видео
+    const videosSection = document.querySelector('.training-videos-section');
+    if (videosSection) {
+        const videosObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log('Секция с видео появилась в зоне видимости');
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        videosObserver.observe(videosSection);
+    }
+    
+    // Наблюдатель для важной информации
+    const importantInfoSection = document.querySelector('.important-info-section');
+    if (importantInfoSection) {
+        const infoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log('Секция с важной информацией появилась в зоне видимости');
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        infoObserver.observe(importantInfoSection);
+    }
+    
+    console.log('Наблюдатели страницы инициализированы');
+}
+
+// ========================================
+// ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
+// ========================================
+
+// Дебаунс функция для оптимизации обработчиков событий
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Определение типа устройства
+function getDeviceType() {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+        return "tablet";
+    }
+    if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+        return "mobile";
+    }
+    return "desktop";
+}
+
+// Проверка поддержки тач-событий
+function isTouchDevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+}
+
+// Логирование ошибок
+window.addEventListener('error', function(e) {
+    console.error('Произошла ошибка:', e.message, 'в', e.filename, 'строка', e.lineno);
+});
+
+// Обработка offline/online состояния
+window.addEventListener('offline', function() {
+    console.warn('Приложение перешло в офлайн режим');
+});
+
+window.addEventListener('online', function() {
+    console.log('Приложение вернулось в онлайн режим');
+});
+
+// ========================================
+// ИНИЦИАЛИЗАЦИЯ ПРИ ЗАГРУЗКЕ
+// ========================================
+
+// Проверка, загружена ли страница полностью
+window.addEventListener('load', function() {
+    console.log('Страница полностью загружена');
+    
+    // Проверяем производительность загрузки
+    if (window.performance) {
+        const timing = performance.getEntriesByType('navigation')[0];
+        if (timing) {
+            console.log('Время загрузки страницы:', timing.loadEventEnd - timing.fetchStart, 'мс');
+        }
+    }
+    
+    // Показываем пользователю, что страница готова
+    document.body.classList.add('loaded');
+    
+    // Убираем возможный прелоадер, если он есть
+    const preloader = document.querySelector('.preloader');
+    if (preloader) {
+        preloader.style.display = 'none';
+    }
+});
+
+// ========================================
+// СОБЫТИЯ АНАЛИТИКИ (пример)
+// ========================================
+
+// Функция для отправки событий аналитики
+function trackEvent(category, action, label) {
+    try {
+        // Google Analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', action, {
+                'event_category': category,
+                'event_label': label
+            });
+        }
+        
+        console.log('Событие отправлено:', { category, action, label });
+    } catch (e) {
+        console.log('Ошибка отправки аналитики:', e);
+    }
+}
+
+// Отслеживание кликов по телефонам
+document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+    link.addEventListener('click', function() {
+        trackEvent('engagement', 'phone_click', this.href);
+    });
+});
+
+// Отслеживание внешних ссылок
+document.querySelectorAll('a[href^="http"]').forEach(link => {
+    if (!link.href.includes(window.location.hostname)) {
+        link.addEventListener('click', function() {
+            trackEvent('engagement', 'external_link_click', this.href);
+        });
+    }
+});
+
+// ========================================
+// ОПТИМИЗАЦИЯ ДЛЯ МОБИЛЬНЫХ
+// ========================================
+
+// Улучшение взаимодействия для тач-устройств
+if (isTouchDevice()) {
+    console.log('Обнаружено тач-устройство, применяем оптимизации...');
+    
+    // Увеличиваем тач-зоны для интерактивных элементов
+    document.querySelectorAll('.group-btn, .control-btn, .schedule-event').forEach(element => {
+        element.style.minHeight = '44px';
+        element.style.minWidth = '44px';
+    });
+    
+    // Отключаем hover-эффекты на тач-устройствах
+    document.body.classList.add('touch-device');
+    
+    // Предотвращаем масштабирование при двойном тапе
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function(event) {
+        const now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+}
+
+// ========================================
+// ОБРАБОТКА КЛАВИАТУРНОЙ НАВИГАЦИИ
+// ========================================
+
+// Фокусировка на основном контенте при пропуске меню
+document.addEventListener('keydown', function(e) {
+    // Пропуск меню (для доступности)
+    if (e.key === 'Tab' && e.shiftKey === false) {
+        const skipLink = document.querySelector('.skip-to-content');
+        if (skipLink && document.activeElement === document.body) {
+            skipLink.focus();
+            e.preventDefault();
+        }
+    }
+});
+
+// ========================================
+// СОХРАНЕНИЕ СОСТОЯНИЯ СТРАНИЦЫ
+// ========================================
+
+// Сохранение позиции скролла
+window.addEventListener('beforeunload', function() {
+    localStorage.setItem('schedulePageScroll', window.pageYOffset);
+});
+
+// Восстановление позиции скролла при возврате
+window.addEventListener('pageshow', function() {
+    const savedScroll = localStorage.getItem('schedulePageScroll');
+    if (savedScroll) {
+        setTimeout(() => {
+            window.scrollTo(0, parseInt(savedScroll));
+            localStorage.removeItem('schedulePageScroll');
+        }, 100);
+    }
+});
+
+console.log('JavaScript для страницы расписания успешно загружен');
+    </script>
+
+    
+</body>
+</html>
